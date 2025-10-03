@@ -1,4 +1,7 @@
-import { Feather, Brain, Wand2, ArrowRight } from "lucide-react";
+import { Feather, Brain, GraduationCap, ArrowRight } from "lucide-react";
+import hekayatyImage from "@/assets/ChatGPT Image 15 مايو 2025، 12_33_28 ص.png";
+import learnovaImage from "@/assets/d35015ab-3f84-498e-8bbe-9d844e8d146a.png";
+import kidemyImage from "@/assets/ChatGPT Image 23 سبتمبر 2025، 06_49_08 م.png";
 
 export default function Projects() {
   const projects = [
@@ -6,22 +9,25 @@ export default function Projects() {
       icon: Feather,
       title: "Hekayaty",
       description: "Revolutionary storytelling platform empowering writers with AI-assisted tools, collaborative editing, and seamless publishing workflows.",
-      image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      colors: ["bg-primary", "bg-green-500", "bg-blue-500"]
+      image: hekayatyImage,
+      colors: ["bg-primary", "bg-green-500", "bg-blue-500"],
+      link: "https://hekayaty-platforms-flax.vercel.app/"
     },
     {
       icon: Brain,
       title: "Learnova",
       description: "Next-generation education platform featuring adaptive learning, real-time analytics, and personalized curriculum for optimal knowledge retention.",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      colors: ["bg-primary", "bg-orange-500", "bg-red-500"]
+      image: learnovaImage,
+      colors: ["bg-primary", "bg-orange-500", "bg-red-500"],
+      link: "https://learnova-paltform.vercel.app/"
     },
     {
-      icon: Wand2,
-      title: "TaleCraft",
-      description: "Professional comic and story editor with advanced design tools, team collaboration features, and integrated publishing solutions.",
-      image: "https://images.unsplash.com/photo-1562329265-95a6d7a83440?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      colors: ["bg-primary", "bg-yellow-500", "bg-pink-500"]
+      icon: GraduationCap,
+      title: "Kidemy",
+      description: "Interactive educational website designed for teachers and students to explore and explain science concepts through engaging digital experiences and collaborative learning tools.",
+      image: kidemyImage,
+      colors: ["bg-primary", "bg-yellow-500", "bg-pink-500"],
+      link: "https://kidemy-platform.vercel.app/"
     }
   ];
 
@@ -60,9 +66,15 @@ export default function Projects() {
                         <span key={colorIndex} className={`w-2 h-2 ${color} rounded-full`}></span>
                       ))}
                     </div>
-                    <button className="text-primary hover:text-primary/80 font-medium" data-testid={`button-learn-more-${project.title.toLowerCase()}`}>
-                      Learn More <ArrowRight className="inline ml-1 h-4 w-4" />
-                    </button>
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/80 font-medium transition-colors duration-200 flex items-center gap-1"
+                      data-testid={`button-learn-more-${project.title.toLowerCase()}`}
+                    >
+                      Learn More <ArrowRight className="h-4 w-4" />
+                    </a>
                   </div>
                 </div>
               </div>

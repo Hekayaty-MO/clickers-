@@ -3,9 +3,9 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 export default function Footer() {
   const footerLinks = {
     projects: [
-      { name: "Hekayaty", href: "#" },
-      { name: "Learnova", href: "#" },
-      { name: "TaleCraft", href: "#" }
+      { name: "Hekayaty", href: "https://hekayaty-platforms-flax.vercel.app/" },
+      { name: "Learnova", href: "https://learnova-paltform.vercel.app/" },
+      { name: "Kidemy", href: "https://kidemy-platform.vercel.app/" }
     ],
     services: [
       { name: "Web Development", href: "#" },
@@ -68,7 +68,9 @@ export default function Footer() {
               {footerLinks.projects.map((link, index) => (
                 <li key={index}>
                   <a 
-                    href={link.href} 
+                    href={link.href}
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="hover:text-primary transition-colors"
                     data-testid={`footer-project-${link.name.toLowerCase()}`}
                   >

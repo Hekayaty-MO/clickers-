@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import { BookOpen, GraduationCap, Palette } from "lucide-react";
+import { Feather, Brain, GraduationCap, ExternalLink } from "lucide-react";
+import hekayatyImage from "@/assets/ChatGPT Image 15 مايو 2025، 12_33_28 ص.png";
+import learnovaImage from "@/assets/d35015ab-3f84-498e-8bbe-9d844e8d146a.png";
+import kidemyImage from "@/assets/ChatGPT Image 23 سبتمبر 2025، 06_49_08 م.png";
 
 export default function ProjectShowcase() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -7,25 +10,28 @@ export default function ProjectShowcase() {
 
   const projects = [
     {
-      icon: BookOpen,
+      icon: Feather,
       title: "Hekayaty",
-      description: "A revolutionary storytelling and publishing platform that empowers creators to craft, share, and monetize their stories with cutting-edge tools and AI assistance.",
-      tags: ["Publishing", "AI-Powered", "Creator Tools"],
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
+      description: "Revolutionary storytelling platform empowering writers with AI-assisted tools, collaborative editing, and seamless publishing workflows for creative storytellers.",
+      tags: ["Storytelling", "AI-Powered", "Publishing"],
+      image: hekayatyImage,
+      link: "https://hekayaty-platforms-flax.vercel.app/"
+    },
+    {
+      icon: Brain,
+      title: "Learnova",
+      description: "Next-generation education platform featuring adaptive learning, real-time analytics, and personalized curriculum for optimal knowledge retention and student engagement.",
+      tags: ["EdTech", "Adaptive Learning", "Analytics"],
+      image: learnovaImage,
+      link: "https://learnova-paltform.vercel.app/"
     },
     {
       icon: GraduationCap,
-      title: "Learnova",
-      description: "Next-generation education platform combining interactive learning, personalized curricula, and advanced analytics to transform how knowledge is acquired and retained.",
-      tags: ["EdTech", "Interactive", "Analytics"],
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
-    },
-    {
-      icon: Palette,
-      title: "TaleCraft",
-      description: "Professional comic and story editor featuring intuitive design tools, collaborative features, and seamless publishing workflows for digital storytellers and comic creators.",
-      tags: ["Comic Editor", "Creative Suite", "Collaborative"],
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
+      title: "Kidemy",
+      description: "Interactive educational website designed for teachers and students to explore and explain science concepts through engaging digital experiences and collaborative learning tools.",
+      tags: ["Science Education", "Interactive", "Teacher Tools"],
+      image: kidemyImage,
+      link: "https://kidemy-platform.vercel.app/"
     }
   ];
 
@@ -74,13 +80,21 @@ export default function ProjectShowcase() {
                     <p className="text-muted-foreground mb-6">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-6">
                       {project.tags.map((tag, tagIndex) => (
                         <span key={tagIndex} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
                           {tag}
                         </span>
                       ))}
                     </div>
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:scale-105"
+                    >
+                      Visit Project <ExternalLink className="h-4 w-4" />
+                    </a>
                   </div>
                 </div>
               );

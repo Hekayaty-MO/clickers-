@@ -39,7 +39,7 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-white hover:text-primary transition-colors"
                 data-testid={`nav-link-${link.label.toLowerCase()}`}
               >
                 {link.label}
@@ -50,7 +50,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button 
-              className="text-muted-foreground hover:text-foreground"
+              className="text-white hover:text-primary"
               onClick={handleMobileMenuToggle}
               data-testid="mobile-menu-toggle"
             >
@@ -68,7 +68,7 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-foreground"
+                className="block w-full text-left px-3 py-2 text-white hover:text-primary"
                 data-testid={`mobile-nav-link-${link.label.toLowerCase()}`}
               >
                 {link.label}
