@@ -49,12 +49,10 @@ export default function Hero() {
           </div>
           
           {/* Enhanced Subtitle */}
-          <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-white mb-6 sm:mb-8 max-w-5xl mx-auto leading-tight px-4">
-            We craft <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-semibold">digital stories</span>, 
-            <br className="hidden sm:block" />
-            build <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold">educational platforms</span>, 
-            <br className="hidden sm:block" />
-            and create <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent font-semibold">cutting-edge technology</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-white mb-6 sm:mb-8 max-w-5xl mx-auto leading-tight px-4">
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-semibold">Click</span>, 
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold"> Create</span>, 
+            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent font-semibold"> Elevate</span>
           </h2>
           
           {/* Enhanced Description */}
