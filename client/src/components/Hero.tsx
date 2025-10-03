@@ -39,26 +39,26 @@ export default function Hero() {
               <span className="text-sm font-medium text-white/90">Digital Innovation Agency</span>
             </div>
             
-            <h1 className="text-7xl md:text-9xl font-black mb-6">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-4 sm:mb-6 px-4">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                 Clickers
               </span>
             </h1>
             
-            <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto mb-8 rounded-full"></div>
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto mb-6 sm:mb-8 rounded-full"></div>
           </div>
           
           {/* Enhanced Subtitle */}
-          <h2 className="text-3xl md:text-5xl font-light text-white mb-8 max-w-5xl mx-auto leading-tight">
+          <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-white mb-6 sm:mb-8 max-w-5xl mx-auto leading-tight px-4">
             We craft <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-semibold">digital stories</span>, 
-            <br className="hidden md:block" />
+            <br className="hidden sm:block" />
             build <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold">educational platforms</span>, 
-            <br className="hidden md:block" />
+            <br className="hidden sm:block" />
             and create <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent font-semibold">cutting-edge technology</span>
           </h2>
           
           {/* Enhanced Description */}
-          <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
             An innovative Egyptian engineering and technology agency crafting the next generation of digital experiences 
             that inspire, educate, and transform the future.
           </p>
@@ -77,18 +77,18 @@ export default function Hero() {
           </div>
           
           {/* Stats or Features */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4">
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">50+</div>
-              <div className="text-white/70">Projects Delivered</div>
+              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">50+</div>
+              <div className="text-white/70 text-sm sm:text-base">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-2">5+</div>
-              <div className="text-white/70">Years Experience</div>
+              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-2">5+</div>
+              <div className="text-white/70 text-sm sm:text-base">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-2">100%</div>
-              <div className="text-white/70">Client Satisfaction</div>
+              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-2">100%</div>
+              <div className="text-white/70 text-sm sm:text-base">Client Satisfaction</div>
             </div>
           </div>
         </div>

@@ -117,4 +117,15 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    .card-hover:hover {
+      transform: translateY(-4px);
+    }
+    
+    .fade-in {
+      transform: translateY(20px);
+    }
+  }
 }

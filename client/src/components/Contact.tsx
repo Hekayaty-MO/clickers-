@@ -97,13 +97,13 @@ export default function Contact() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
-          <div className="bg-card p-8 rounded-xl border border-border fade-in">
-            <h3 className="text-2xl font-bold mb-6">Send us a message</h3>
+          <div className="bg-card p-4 sm:p-6 lg:p-8 rounded-xl border border-border fade-in">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Send us a message</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <FormField
                     control={form.control}
                     name="firstName"

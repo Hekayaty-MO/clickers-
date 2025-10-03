@@ -16,7 +16,7 @@ export default function OurStory() {
           </p>
         </div>
 
-        <article className="prose prose-lg mx-auto text-muted-foreground whitespace-pre-line">
+        <article className="prose prose-sm sm:prose-base lg:prose-lg mx-auto text-muted-foreground whitespace-pre-line max-w-none px-4">
           {story}
         </article>
       </div>
